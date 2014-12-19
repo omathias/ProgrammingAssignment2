@@ -27,13 +27,12 @@ makeCacheMatrix <- function(x = matrix()) {
 #' The function determines if the vector's inverse has been calucalated by
 #' accessing the common object stored outside the scope of the function.
 #' If the inverse has been calculated, it returns it
-#' If not, it calculates the inverse, updates the cache and returns the matrix
+#' If not, it calculates the inverse, updates the cache and returns the matrix...
 #'  
 #' @param x A matrix.
 #' @return The inverse of the input matrix
 #' @examples
 #' cacheSolve(a)
-
 cacheSolve <- function(x, ...) {
   
   mat <- x$get()
